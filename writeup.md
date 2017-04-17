@@ -19,11 +19,11 @@ The goals / steps of this project are the following:
 [image1]: ./new_images/counts.png "counts"
 [image2]: ./new_images/grayscale.png "grayscale"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./new_images/0.jpg "0"
-[image5]: ./new_images/1.jpg "0"
-[image6]: ./new_images/2.jpg "0"
-[image7]: ./new_images/3.jpg "0"
-[image8]: ./new_images/4.jpg "0"
+[image4]: ./new_images/0.jpg "0" =100x100
+[image5]: ./new_images/1.jpg "1" =100x100
+[image6]: ./new_images/2.jpg "2" =100x100
+[image7]: ./new_images/3.jpg "3" =100x100
+[image8]: ./new_images/4.jpg "4" =100x100
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -52,7 +52,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed around 43 different sign categories. The images clearly are not evenly collected by each type of signs.
 
-[image1]
+![alt text][image1]
 
 ###Design and Test a Model Architecture
 
