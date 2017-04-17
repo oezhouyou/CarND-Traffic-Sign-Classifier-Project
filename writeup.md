@@ -19,11 +19,11 @@ The goals / steps of this project are the following:
 [image1]: ./new_images/counts.png "counts"
 [image2]: ./new_images/grayscale.png "grayscale"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./new_images/0.jpg "0" =100x100
-[image5]: ./new_images/1.jpg "1" =100x100
-[image6]: ./new_images/2.jpg "2" =100x100
-[image7]: ./new_images/3.jpg "3" =100x100
-[image8]: ./new_images/4.jpg "4" =100x100
+[image4]: ./new_images/0.jpg "0" 
+[image5]: ./new_images/1.jpg "1"
+[image6]: ./new_images/2.jpg "2"
+[image7]: ./new_images/3.jpg "3"
+[image8]: ./new_images/4.jpg "4"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -114,8 +114,11 @@ The training set accuracy is quite close to 1.00 after 40 iteration and both val
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+<img src="./new_images/0.jpg" width="100" height="100">
+<img src="./new_images/1.jpg" width="100" height="100">
+<img src="./new_images/2.jpg" width="100" height="100">
+<img src="./new_images/3.jpg" width="100" height="100">
+<img src="./new_images/4.jpg" width="100" height="100">
 
 The first image might be difficult to classify because the sign doesn't contain clear pixel features after resize.
 
