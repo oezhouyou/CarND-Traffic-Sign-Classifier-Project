@@ -16,14 +16,14 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
+[image1]: ./new_images/counts.png "counts"
+[image2]: ./new_images/grayscale.png "grayscale"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image4]: ./new_images/0.jpg "0"
+[image5]: ./new_images/1.jpg "0"
+[image6]: ./new_images/2.jpg "0"
+[image7]: ./new_images/3.jpg "0"
+[image8]: ./new_images/4.jpg "0"
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -52,7 +52,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed around 43 different sign categories. The images clearly are not evenly collected by each type of signs.
 
-[image1]: ./new_images/counts.png "counts"
+[image1]
 
 ###Design and Test a Model Architecture
 
@@ -62,7 +62,7 @@ As a first step, I decided to convert the images to grayscale because grayscale 
 
 Here is an example of a traffic sign image after grayscaling.
 
-![alt text][image2]: ./new_images/grayscale.png "grayscale"
+![alt text][image2]
 
 Later, I normalized the image data because standardized features make the learning process treating each of them equally.
 
@@ -114,8 +114,8 @@ The training set accuracy is quite close to 1.00 after 40 iteration and both val
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4]: ./new_images/0.jpg "0" ![alt text][image5]: ./new_images/1.jpg "1" ![alt text][image6]: ./new_images/2.jpg "2" 
-![alt text][image7]: ./new_images/3.jpg "3" ![alt text][image8]: ./new_images/4.jpg "4"
+![alt text][image4] ![alt text][image5] ![alt text][image6] 
+![alt text][image7] ![alt text][image8]
 
 The first image might be difficult to classify because the sign doesn't contain clear pixel features after resize.
 
