@@ -11802,7 +11802,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[209]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load pickled data</span>
@@ -11860,11 +11860,13 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[210]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Replace each question mark with the appropriate value. </span>
 <span class="c1">### Use python, pandas or numpy methods rather than hard coding the results</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="c1"># TODO: Number of training examples</span>
 <span class="n">n_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -11936,7 +11938,7 @@ Number of classes = 43
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[211]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Data exploration visualization code goes here.</span>
@@ -12157,7 +12159,7 @@ h5mZFebiYWZmhbl4mJlZYS4eZmZWmIuHmZkV5uJhZmaF/X97hjzIzXHfyQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[212]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Preprocess the data here. It is required to normalize the data. Other preprocessing steps could include </span>
@@ -12165,7 +12167,6 @@ h5mZFebiYWZmhbl4mJlZYS4eZmZWmIuHmZkV5uJhZmaF/X97hjzIzXHfyQAAAABJRU5ErkJggg==
 <span class="c1">### Feel free to use as many code cells as needed.</span>
 
 <span class="kn">import</span> <span class="nn">cv2</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="k">import</span> <span class="n">shuffle</span>
 
 <span class="k">def</span> <span class="nf">preprocess</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -12228,7 +12229,7 @@ h5mZFebiYWZmhbl4mJlZYS4eZmZWmIuHmZkV5uJhZmaF/X97hjzIzXHfyQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[213]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Define your architecture here.</span>
@@ -12319,7 +12320,7 @@ sets imply underfitting. A high accuracy on the training set but low accuracy on
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[214]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Train your model here.</span>
@@ -12400,207 +12401,207 @@ sets imply underfitting. A high accuracy on the training set but low accuracy on
 <pre>Training...
 
 EPOCH 1 ...
-Training Accuracy = 0.777
-Validation Accuracy = 0.704
+Training Accuracy = 0.784
+Validation Accuracy = 0.720
 
 EPOCH 2 ...
 Training Accuracy = 0.892
-Validation Accuracy = 0.826
+Validation Accuracy = 0.833
 
 EPOCH 3 ...
-Training Accuracy = 0.938
-Validation Accuracy = 0.861
+Training Accuracy = 0.932
+Validation Accuracy = 0.859
 
 EPOCH 4 ...
-Training Accuracy = 0.942
-Validation Accuracy = 0.868
+Training Accuracy = 0.962
+Validation Accuracy = 0.893
 
 EPOCH 5 ...
-Training Accuracy = 0.962
-Validation Accuracy = 0.895
+Training Accuracy = 0.969
+Validation Accuracy = 0.891
 
 EPOCH 6 ...
-Training Accuracy = 0.972
-Validation Accuracy = 0.888
+Training Accuracy = 0.976
+Validation Accuracy = 0.893
 
 EPOCH 7 ...
-Training Accuracy = 0.973
-Validation Accuracy = 0.900
+Training Accuracy = 0.979
+Validation Accuracy = 0.895
 
 EPOCH 8 ...
-Training Accuracy = 0.984
-Validation Accuracy = 0.896
+Training Accuracy = 0.985
+Validation Accuracy = 0.891
 
 EPOCH 9 ...
-Training Accuracy = 0.988
-Validation Accuracy = 0.908
+Training Accuracy = 0.986
+Validation Accuracy = 0.914
 
 EPOCH 10 ...
 Training Accuracy = 0.989
-Validation Accuracy = 0.916
+Validation Accuracy = 0.905
 
 EPOCH 11 ...
-Training Accuracy = 0.990
-Validation Accuracy = 0.906
+Training Accuracy = 0.991
+Validation Accuracy = 0.905
 
 EPOCH 12 ...
-Training Accuracy = 0.993
-Validation Accuracy = 0.912
+Training Accuracy = 0.994
+Validation Accuracy = 0.907
 
 EPOCH 13 ...
-Training Accuracy = 0.989
-Validation Accuracy = 0.918
+Training Accuracy = 0.993
+Validation Accuracy = 0.910
 
 EPOCH 14 ...
-Training Accuracy = 0.991
-Validation Accuracy = 0.906
+Training Accuracy = 0.989
+Validation Accuracy = 0.896
 
 EPOCH 15 ...
 Training Accuracy = 0.993
-Validation Accuracy = 0.911
+Validation Accuracy = 0.913
 
 EPOCH 16 ...
-Training Accuracy = 0.995
-Validation Accuracy = 0.912
+Training Accuracy = 0.996
+Validation Accuracy = 0.915
 
 EPOCH 17 ...
-Training Accuracy = 0.985
-Validation Accuracy = 0.907
+Training Accuracy = 0.987
+Validation Accuracy = 0.909
 
 EPOCH 18 ...
-Training Accuracy = 0.996
-Validation Accuracy = 0.907
-
-EPOCH 19 ...
-Training Accuracy = 0.996
-Validation Accuracy = 0.908
-
-EPOCH 20 ...
-Training Accuracy = 0.996
-Validation Accuracy = 0.923
-
-EPOCH 21 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.917
-
-EPOCH 22 ...
 Training Accuracy = 0.997
 Validation Accuracy = 0.912
+
+EPOCH 19 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.905
+
+EPOCH 20 ...
+Training Accuracy = 0.993
+Validation Accuracy = 0.907
+
+EPOCH 21 ...
+Training Accuracy = 0.992
+Validation Accuracy = 0.899
+
+EPOCH 22 ...
+Training Accuracy = 0.998
+Validation Accuracy = 0.926
 
 EPOCH 23 ...
 Training Accuracy = 0.998
-Validation Accuracy = 0.922
+Validation Accuracy = 0.912
 
 EPOCH 24 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.924
+Training Accuracy = 0.995
+Validation Accuracy = 0.912
 
 EPOCH 25 ...
-Training Accuracy = 0.992
-Validation Accuracy = 0.906
+Training Accuracy = 0.998
+Validation Accuracy = 0.916
 
 EPOCH 26 ...
-Training Accuracy = 0.996
-Validation Accuracy = 0.925
+Training Accuracy = 0.999
+Validation Accuracy = 0.916
 
 EPOCH 27 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.928
+Training Accuracy = 0.993
+Validation Accuracy = 0.915
 
 EPOCH 28 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.919
+Training Accuracy = 0.999
+Validation Accuracy = 0.924
 
 EPOCH 29 ...
-Training Accuracy = 0.994
-Validation Accuracy = 0.915
+Training Accuracy = 0.998
+Validation Accuracy = 0.917
 
 EPOCH 30 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.921
+Training Accuracy = 0.997
+Validation Accuracy = 0.911
 
 EPOCH 31 ...
-Training Accuracy = 1.000
-Validation Accuracy = 0.932
+Training Accuracy = 0.994
+Validation Accuracy = 0.902
 
 EPOCH 32 ...
-Training Accuracy = 1.000
-Validation Accuracy = 0.932
+Training Accuracy = 0.998
+Validation Accuracy = 0.917
 
 EPOCH 33 ...
-Training Accuracy = 1.000
-Validation Accuracy = 0.928
+Training Accuracy = 0.999
+Validation Accuracy = 0.929
 
 EPOCH 34 ...
-Training Accuracy = 0.991
-Validation Accuracy = 0.915
+Training Accuracy = 0.996
+Validation Accuracy = 0.906
 
 EPOCH 35 ...
-Training Accuracy = 0.994
-Validation Accuracy = 0.921
+Training Accuracy = 0.998
+Validation Accuracy = 0.926
 
 EPOCH 36 ...
-Training Accuracy = 0.996
-Validation Accuracy = 0.915
+Training Accuracy = 0.995
+Validation Accuracy = 0.918
 
 EPOCH 37 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.926
-
-EPOCH 38 ...
-Training Accuracy = 1.000
-Validation Accuracy = 0.926
-
-EPOCH 39 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.914
-
-EPOCH 40 ...
-Training Accuracy = 1.000
-Validation Accuracy = 0.927
-
-EPOCH 41 ...
-Training Accuracy = 0.998
-Validation Accuracy = 0.930
-
-EPOCH 42 ...
 Training Accuracy = 0.997
 Validation Accuracy = 0.920
 
-EPOCH 43 ...
-Training Accuracy = 0.997
+EPOCH 38 ...
+Training Accuracy = 1.000
+Validation Accuracy = 0.927
+
+EPOCH 39 ...
+Training Accuracy = 1.000
+Validation Accuracy = 0.929
+
+EPOCH 40 ...
+Training Accuracy = 1.000
+Validation Accuracy = 0.931
+
+EPOCH 41 ...
+Training Accuracy = 1.000
 Validation Accuracy = 0.930
 
+EPOCH 42 ...
+Training Accuracy = 1.000
+Validation Accuracy = 0.926
+
+EPOCH 43 ...
+Training Accuracy = 0.964
+Validation Accuracy = 0.895
+
 EPOCH 44 ...
-Training Accuracy = 0.996
-Validation Accuracy = 0.933
+Training Accuracy = 0.997
+Validation Accuracy = 0.924
 
 EPOCH 45 ...
-Training Accuracy = 0.999
-Validation Accuracy = 0.926
+Training Accuracy = 0.998
+Validation Accuracy = 0.935
 
 EPOCH 46 ...
 Training Accuracy = 1.000
-Validation Accuracy = 0.939
+Validation Accuracy = 0.928
 
 EPOCH 47 ...
 Training Accuracy = 1.000
-Validation Accuracy = 0.933
+Validation Accuracy = 0.935
 
 EPOCH 48 ...
 Training Accuracy = 1.000
-Validation Accuracy = 0.940
+Validation Accuracy = 0.934
 
 EPOCH 49 ...
 Training Accuracy = 1.000
-Validation Accuracy = 0.940
+Validation Accuracy = 0.933
 
 EPOCH 50 ...
 Training Accuracy = 1.000
-Validation Accuracy = 0.939
+Validation Accuracy = 0.935
 
 Model saved
-Test Accuracy = 0.924
+Test Accuracy = 0.921
 </pre>
 </div>
 </div>
@@ -12632,7 +12633,7 @@ Test Accuracy = 0.924
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[215]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Load the images and plot them here.</span>
@@ -15961,7 +15962,7 @@ x+PxeDweT83whprH4/F4PB6Px+Px1Iz/B50aDig5AaSbAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[216]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Run the predictions here and use the model to output the prediction for each image.</span>
@@ -15980,7 +15981,7 @@ x+PxeDweT83whprH4/F4PB6Px+Px1Iz/B50aDig5AaSbAAAAAElFTkSuQmCC
 <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span> <span class="k">as</span> <span class="n">sess</span><span class="p">:</span>
     <span class="n">saver</span><span class="o">.</span><span class="n">restore</span><span class="p">(</span><span class="n">sess</span><span class="p">,</span> <span class="s1">&#39;./traffic_sign_model.ckpt&#39;</span><span class="p">)</span>
     <span class="n">prediction_results</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="n">x</span><span class="p">:</span> <span class="n">images_resize</span><span class="p">})</span>
-    <span class="n">prediction_top5</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">top_k</span><span class="p">(</span><span class="n">prediction_results</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="nb">sorted</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+    <span class="n">prediction_top5</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">top_k</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">prediction_results</span><span class="p">),</span> <span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="nb">sorted</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
     <span class="n">prediction_name</span> <span class="o">=</span> <span class="p">[]</span>
 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
@@ -16005,7 +16006,7 @@ x+PxeDweT83whprH4/F4PB6Px+Px1Iz/B50aDig5AaSbAAAAAElFTkSuQmCC
 
 Image 1 is predicted as Pedestrians
 
-Image 2 is predicted as Speed limit (60km/h)
+Image 2 is predicted as No passing
 
 Image 3 is predicted as General caution
 
@@ -16030,7 +16031,7 @@ Image 4 is predicted as Children crossing
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[217]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Calculate the accuracy for these 5 new images. </span>
@@ -16115,7 +16116,7 @@ a = np.array([[ 0.24879643,  0.07032244,  0.12641572,  0.34763842,  0.07893497,
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[218]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Print out the top five softmax probabilities for the predictions on the German traffic sign images found on the web. </span>
@@ -16123,7 +16124,7 @@ a = np.array([[ 0.24879643,  0.07032244,  0.12641572,  0.34763842,  0.07893497,
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">prediction_top5</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Image&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39;top5 probabilities:&#39;</span><span class="p">,</span> <span class="n">prediction_top5</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Image&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39;top 5predicted classes:&#39;</span><span class="p">,</span> <span class="n">prediction_top5</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Image&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39;top5 predicted classes:&#39;</span><span class="p">,</span> <span class="n">sign_type_names</span><span class="p">[</span><span class="n">prediction_top5</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]])</span>
     <span class="nb">print</span><span class="p">()</span>
 </pre></div>
 
@@ -16139,20 +16140,30 @@ a = np.array([[ 0.24879643,  0.07032244,  0.12641572,  0.34763842,  0.07893497,
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Image 0 top5 probabilities: [ 57.63670731  31.39856529  15.37975025  15.12766647  13.47675514]
-Image 0 top 5predicted classes: [ 2 31 23  1  5]
+<pre>Image 0 top5 probabilities: [  1.00000000e+00   2.11869006e-21   5.07772182e-30   1.48224373e-33
+   0.00000000e+00]
+Image 0 top5 predicted classes: [&#39;Speed limit (50km/h)&#39; &#39;Speed limit (30km/h)&#39; &#39;Speed limit (80km/h)&#39;
+ &#39;Speed limit (60km/h)&#39; &#39;Speed limit (20km/h)&#39;]
 
-Image 1 top5 probabilities: [ 47.28575134  30.99937057  24.30777168  20.42969894  16.96981239]
-Image 1 top 5predicted classes: [27 18 11 25 24]
+Image 1 top5 probabilities: [  9.63049293e-01   3.69505249e-02   2.46419148e-07   1.91916924e-18
+   6.76800883e-19]
+Image 1 top5 predicted classes: [&#39;Pedestrians&#39; &#39;General caution&#39; &#39;Road narrows on the right&#39;
+ &#39;Right-of-way at the next intersection&#39; &#39;Double curve&#39;]
 
-Image 2 top5 probabilities: [ 54.17443848  43.3646965   39.43915176  31.04854393  30.86323929]
-Image 2 top 5predicted classes: [ 3 13 10  9 34]
+Image 2 top5 probabilities: [  9.99988914e-01   1.11207701e-05   1.85646631e-09   2.11500508e-13
+   8.96178659e-17]
+Image 2 top5 predicted classes: [&#39;No passing&#39; &#39;Ahead only&#39; &#39;End of no passing&#39; &#39;Turn left ahead&#39;
+ &#39;Slippery road&#39;]
 
-Image 3 top5 probabilities: [ 99.7714386   68.31176758  49.37245941  36.28529358  28.92156601]
-Image 3 top 5predicted classes: [18 26 27 28 37]
+Image 3 top5 probabilities: [  9.99993563e-01   6.42024997e-06   5.14874610e-15   1.40591918e-16
+   1.04096332e-16]
+Image 3 top5 predicted classes: [&#39;General caution&#39; &#39;Traffic signals&#39; &#39;Road narrows on the right&#39;
+ &#39;Road work&#39; &#39;Pedestrians&#39;]
 
-Image 4 top5 probabilities: [ 58.74137878  28.70401192  15.43989372  12.19645405  10.74031925]
-Image 4 top 5predicted classes: [28 20 23 34 29]
+Image 4 top5 probabilities: [  9.99999881e-01   7.08784498e-08   6.26242480e-16   1.19224354e-18
+   9.70043954e-22]
+Image 4 top5 predicted classes: [&#39;Children crossing&#39; &#39;Dangerous curve to the right&#39; &#39;Bicycles crossing&#39;
+ &#39;Beware of ice/snow&#39; &#39;Keep right&#39;]
 
 </pre>
 </div>
@@ -16207,7 +16218,7 @@ Image 4 top 5predicted classes: [28 20 23 34 29]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[219]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Visualize your network&#39;s feature maps here.</span>
